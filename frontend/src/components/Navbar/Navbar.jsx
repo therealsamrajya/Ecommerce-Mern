@@ -20,9 +20,9 @@ const Navbar = () => {
             <Link to="/mens">Men</Link>
           </li>
           <li className=" hover:text-red-600">
-            <Link to="/womens"></Link>
+            <Link to="/womens">Women</Link>
           </li>
-          <li className=" hover:text-red-600 ml-[-2rem]">
+          <li className=" hover:text-red-600 ">
             <Link to="/kids">Kids</Link>
           </li>
         </div>

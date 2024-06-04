@@ -1,7 +1,7 @@
 import LoginSignup from "./LoginSignUp/LoginSignup";
-import { Shop, ShopCategory } from "./Shop/Shop";
+import Shop from "./Shop/Shop";
 import Product from "./Products/Product";
-import ShopCategory from "./Shop/ShopCategory";
 import Cart from "./Cart/Cart";
+import ShopCategory from "./Shop/ShopCategory";
 
 export { LoginSignup, Shop, ShopCategory, Product, Cart };
