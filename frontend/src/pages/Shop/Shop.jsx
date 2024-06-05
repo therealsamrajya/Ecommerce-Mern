@@ -1,10 +1,12 @@
 import React from "react";
-import { Hero } from "../../components";
+import { Hero, Offer, Popular } from "../../components";
 
 const Shop = () => {
   return (
     <div>
       <Hero />
+      <Popular />
+      <Offer />
     </div>
   );
 };
