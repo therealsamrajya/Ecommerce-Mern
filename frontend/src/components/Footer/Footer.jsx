@@ -5,7 +5,7 @@ import pintester_icon from "../assets/pintester_icon.png";
 import whatsapp_icon from "../assets/whatsapp_icon.png";
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center font-poppins">
+    <div className="flex flex-col items-center font-poppins mt-[2rem]">
       <div className="flex flex-row items-center justify-center">
         <img className="w-[20vh]" src={footer_logo} alt="" />
         <p className="text-[#383838] text-[46px] font-semibold mt-[3rem]">

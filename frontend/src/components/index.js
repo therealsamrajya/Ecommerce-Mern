@@ -9,6 +9,9 @@ import NewsLetter from "./NewsLetter/NewsLetter";
 import Footer from "./Footer/Footer";
 import Breadcrum from "./Breadcrums/Breadcrum";
 import ProductDisplay from "./ProductDisplay/ProductDisplay";
+import DescriptionBox from "./DescriptionBox/DescriptionBox";
+import RelatedProducts from "./RelatedProducts/RelatedProducts";
+import CartItems from "./CartItems/CartItems";
 
 export {
   Button,
@@ -22,4 +25,7 @@ export {
   Footer,
   Breadcrum,
   ProductDisplay,
+  DescriptionBox,
+  RelatedProducts,
+  CartItems,
 };

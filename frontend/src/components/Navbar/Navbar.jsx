@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../assets/logo.png";
 import cart_icon from "../assets/cart_icon.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../context/ShopContext";
 
 const Navbar = () => {
+  const { getTotalCartItems } = useContext(ShopContext);
   return (
     <div className="flex justify-around p-[16px] shadow-xl">
       <div className="flex items-center gap-[10px]">
@@ -37,7 +39,7 @@ const Navbar = () => {
           <img className="w-[2rem] mt-3 h-[2rem]" src={cart_icon} alt="cart" />
         </Link>
         <div className="w-[22px] h-[22px] flex justify-center items-center ml-[-30px] bg-red-500 text-white rounded-lg">
-          0
+          {getTotalCartItems()}
         </div>
       </div>
     </div>
