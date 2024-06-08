@@ -11,7 +11,7 @@ const NewCollections = () => {
         </h1>
         <hr className="w-[200px] h-[6px] rounded-xl bg-[#252525]" />
 
-        <div className=" grid-cols-4 gap-[20px] grid mt-[50px] ">
+        <div className=" grid-cols-4 gap-[20px] grid mt-[50px] max-sm:grid-cols-2  ">
           {new_collection.map((item, i) => {
             return (
               <Item
