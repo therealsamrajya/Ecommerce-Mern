@@ -2,8 +2,8 @@ import React from "react";
 
 const DescriptionBox = () => {
   return (
-    <div className=" mx-[120px] my-[170px] font-poppins">
-      <div className="flex flex-col ">
+    <div className=" mx-[120px] my-[170px] font-poppins max-sm:mx-[20px] max-sm:my-[70px]">
+      <div className="flex flex-col   ">
         <div className=" flex flex-row">
           <div className="flex items-center justify-center text-xl font-semibold w-[171px] h-[70px] border-[1px] border-[#d0d0d0]">
             Description

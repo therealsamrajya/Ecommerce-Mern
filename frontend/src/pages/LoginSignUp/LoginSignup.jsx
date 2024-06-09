@@ -3,9 +3,11 @@ import { Button } from "../../components";
 
 const LoginSignup = () => {
   return (
-    <div className="w-[100%] h-[100vh] bg-[#fce3fe] pt-[100px] font-poppins">
-      <div className="w-[595px] h-[600px] bg-white m-auto   py-[30px] px-[50px]">
-        <h1 className=" my-[20px] mx-[0px] ">Sign Up</h1>
+    <div className="w-[100%] h-[100vh] bg-[#fce3fe] pt-[100px] max-sm:pt-[30px] font-poppins">
+      <div className="w-[595px] h-[600px] bg-white m-auto  py-[30px] px-[50px]">
+        <h1 className=" my-[20px] mx-[0px] font-semibold max-sm:py-[0px] ">
+          Sign Up
+        </h1>
         <div className=" flex flex-col gap-[30px] mt-[20px]">
           <input
             className=" h-[72px] w-[100%] pl-[20px] border-[1px] border-[#c9c9c9] outline-none text-[#5c5c5c] text-[18px]"
