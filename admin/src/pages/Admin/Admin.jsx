@@ -4,11 +4,11 @@ import { Routes, Route } from "react-router-dom";
 
 const Admin = () => {
   return (
-    <div className=" flex max-sm: flex-col">
+    <div className=" flex max-sm:flex-col">
       <Sidebar />
       <Routes>
-        <Route path="addproduct" element={<AddProduct />} />
-        <Route path="listproduct" element={<ListProduct />} />
+        <Route path="/addproduct" element={<AddProduct />} />
+        <Route path="/listproduct" element={<ListProduct />} />
       </Routes>
     </div>
   );
