@@ -39,10 +39,22 @@ const Navbar = () => {
         </div>
       </ul>
       <div className="flex flex-row gap-5 items-center">
-        <Button
-          className="w-[157px] h-[58px] border border-[#7a7a7a] text-xl font-semibold bg-white text-center p-3 hover:bg-[#f3f3f3] rounded-lg"
-          value="Login"
-          to="/login"></Button>
+        {localStorage.getItem("auth-token") ? (
+          <button
+            className="w-[157px] h-[58px] border border-[#7a7a7a] text-xl font-semibold bg-white text-center p-3 hover:bg-[#f3f3f3] rounded-lg"
+            onClick={() => {
+              localStorage.removeItem("auth-token");
+              window.location.replace("/");
+            }}>
+            Logout
+          </button>
+        ) : (
+          <Button
+            className="w-[157px] h-[58px] border border-[#7a7a7a] text-xl font-semibold bg-white text-center p-3 hover:bg-[#f3f3f3] rounded-lg"
+            value="Login"
+            to="/login"></Button>
+        )}
+
         <Link to="/cart">
           <img
             className="w-[2rem] mt-1 h-[2.5rem]"
