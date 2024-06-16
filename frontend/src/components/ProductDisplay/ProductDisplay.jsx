@@ -1,12 +1,16 @@
 import React, { useContext } from "react";
 import star_icon from "../assets/star_icon.png";
 import star_dull_icon from "../assets/star_dull_icon.png";
-
 import { ShopContext } from "../../context/ShopContext";
 
 const ProductDisplay = (props) => {
   const { product } = props;
   const { addToCart } = useContext(ShopContext);
+
+  if (!product) {
+    return null; // or return a fallback UI
+  }
+
   return (
     <div className="flex my-0 mx-[170px] font-poppins max-sm:flex-col max-sm:mx-[20px] max-sm:items-center ">
       <div className="flex gap-[17px]">
