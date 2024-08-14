@@ -29,13 +29,16 @@ const AddProduct = () => {
     formData.append("product", image);
 
     try {
-      const response = await fetch("http://localhost:4000/upload", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
-        body: formData,
-      });
+      const response = await fetch(
+        "https://ecommerce-mern-backend-vj6a.onrender.com/upload",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: formData,
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -49,7 +52,7 @@ const AddProduct = () => {
         console.log(product);
 
         const productResponse = await fetch(
-          "http://localhost:4000/addproduct",
+          "https://ecommerce-mern-backend-vj6a.onrender.com/addproduct",
           {
             method: "POST",
             headers: {

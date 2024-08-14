@@ -7,7 +7,9 @@ const ListProduct = () => {
 
   const fetchInfo = async () => {
     try {
-      const response = await fetch("http://localhost:4000/allproducts");
+      const response = await fetch(
+        "https://ecommerce-mern-backend-vj6a.onrender.com/allproducts"
+      );
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -20,14 +22,17 @@ const ListProduct = () => {
 
   const removeProduct = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/removeproduct`, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ id }),
-      });
+      const response = await fetch(
+        `https://ecommerce-mern-backend-vj6a.onrender.com/removeproduct`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ id }),
+        }
+      );
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
